@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin-left: 2px;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account_options {
+    padding: 7px;
+    display: flex;
+    gap: 15px;
+}
+
+.account_options a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+.phone_number {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.phone_number img {
+    width: 30px;
+}
+
+.phone_number span {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+.nav_bar button {
+    padding: 0.5rem 3.5%;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.nav_bar button:hover {
+    border: 0px solid black;
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px grey, -2px -2px 5px grey;
+}
+
+
+#start_your_order {
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    flex: 1;
+    font-size: 1.1rem;
+    margin-top: -0.4rem;
+    margin-bottom: -0.4rem;
+    margin-left: -0.5rem;
+    border-radius: 7px;
+    z-index: 1;
+    box-shadow: 1px 1px 3px black, -1px -1px 3px black;
+    margin-right: 3px;
+    transition: transform 0.2s ease;
+}
+
+.main_image {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+}
+
+.main_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.pizza_options {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(70, 70, 70, 0.5)
+}
+
+.pizza_options a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.pizza_options .current {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 0);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px; 
+}
+
+.pizza_options .option {
+    padding: 10px 20px;
+}
+
+.cards_section {
+    background-color: #e9e8e8;
+}
